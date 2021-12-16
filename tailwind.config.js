@@ -3,13 +3,20 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Inter', 'system-ui', 'Arial', 'sans-serif'],
+    },
     extend: {
+      backgroundImage: {
+        'background-hero': "url('/images/hero-background.png')",
+        'footer-texture': "url('/images/footer-texture.png')",
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
         success: '#0070f3',
-        cyan: '#79FFE1',
+        navy: '#2f446f',
       },
       spacing: {
         28: '7rem',
@@ -19,12 +26,7 @@ module.exports = {
       },
       lineHeight: {
         tight: 1.2,
-      },
-      fontSize: {
-        '5xl': '2.5rem',
-        '6xl': '2.75rem',
-        '7xl': '4.5rem',
-        '8xl': '6.25rem',
+        0: 0,
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
@@ -36,4 +38,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
