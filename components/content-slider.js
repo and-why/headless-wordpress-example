@@ -81,7 +81,7 @@ const SliderSection = styled.section`
   h2 {
     font-size: 48px;
     line-height: 1.1;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     color: #2f446f;
     font-weight: 600;
     max-width: 500px;

@@ -10,6 +10,7 @@ import { CMS_NAME } from '../lib/constants';
 import PostBody from '../components/post-body';
 import HomepageHeader from '../components/homepage-header';
 import ContentSlider from '../components/content-slider';
+import MultiAxisSlider from '../components/multi-axis-slider';
 
 export default function Index({ allPages: { edges }, preview }) {
   const morePages = edges;
@@ -44,6 +45,7 @@ export default function Index({ allPages: { edges }, preview }) {
             </div>
           </div>
           <ContentSlider slider={page.sliderSection} />
+          <MultiAxisSlider content={page.multiAxisSlider} />
         </Container>
       </Layout>
     </>
